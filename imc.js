@@ -5,5 +5,5 @@
     const n2 = Number(altura2.value);
     const Imc = n1 / n2 ** 2;
     const res = window.document.getElementById("res");
-    res.innerHTML = `O resultado do seu IMC é<strong>${Imc}</strong>!!!.`;
+    res.innerHTML = `O resultado do seu IMC é <strong>${Imc}</strong>!!!.`;
     }
