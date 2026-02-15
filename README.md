@@ -1,2 +1,2 @@
 # DeskDev
-Estudos de HTML e CSS
+Estudos de HTML, CSS e Javascript.
