@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sitema de transito</title>
+</head>
+<style>
+    body {
+        background-color: rgba(128, 128, 128, 0.558);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    input {
+        width: 350px;
+        height: 30px;
+        border-radius: 10px;
+    }
+
+    .button {
+        background-color: rgb(167, 167, 241);
+    }
+</style>
+<body>
+    <h1>Sitema de notificação.</h1>
+    Velocidade do carro verificada. km/h 
+    <input type="number" name="tx1" id="tx1" placeholder="Digite a velociade do veículo">
+    <br>
+    <input class="button" type="button" value="Verificar" onclick="calcular()">
+    <div class="res">
+
+    </div>
+    <script>
+        function calcular() {
+            var tx1 = window.document.querySelector('input#tx1');
+            var res = window.document.querySelector('div.res');
+            var vlc = Number(tx1.value);
+            res.innerHTML = `<p>Sua velocidade atual é de ${vlc}km/h.<p/>`
+                if (vlc > 60) {
+                    res.innerHTML += `<p>Você está MULTADO por excesso de velocidade.</p>`                
+                }
+                res.innerHTML += `<p>Dirija sempre com o sinto de segurança!</p>`
+        }
+    </script>
+</body>
+</html>
