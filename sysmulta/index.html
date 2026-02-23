@@ -7,11 +7,12 @@
 </head>
 <style>
     body {
-        background-color: rgba(128, 128, 128, 0.558);
-        display: flex;
+        background-color: #8080808e;
+         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+       
     }
 
     input {
@@ -20,18 +21,36 @@
         border-radius: 10px;
     }
 
+    h1 {
+        width: 350px;
+        font-size: 30px;
+        color: white;
+    }
+
+    .box {
+        background-color: rgb(0, 255, 183);
+        width: 500px;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
     .button {
         background-color: rgb(167, 167, 241);
     }
 </style>
 <body>
-    <h1>Sitema de notificação.</h1>
-    Velocidade do carro verificada. km/h 
-    <input type="number" name="tx1" id="tx1" placeholder="Digite a velociade do veículo">
-    <br>
-    <input class="button" type="button" value="Verificar" onclick="calcular()">
-    <div class="res">
-
+    <div class="box">
+        <h1>Sistema de notificação de transito.</h1>
+        Velocidade do carro verificada. km/h 
+        <input type="number" name="tx1" id="tx1" placeholder="Digite a velociade do veículo">
+        <br>
+        <input class="button" type="button" value="Verificar" onclick="calcular()">
+        <div class="res">
+    
+        </div>
     </div>
     <script>
         function calcular() {
