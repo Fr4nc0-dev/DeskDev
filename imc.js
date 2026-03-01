@@ -20,7 +20,7 @@
         } else if (res > 35 || res < 39.9) {
             console.log('Você está com obesidade grau II.');
         } else {
-            console.log('Você está com obesidade grau III! Procure um médico.')
+            console.log('Você está com obesidade grau III! Procure um médico.');
         }
         
     }
